@@ -1,0 +1,72 @@
+# M-Tube - Myanmar Video Platform
+# .gitignore for PHP MVC Project
+
+# 🚫 Environment & Configuration
+.env
+.env.local
+.env.production
+config.php
+database_credentials.php
+app/config/database.local.php
+
+# 🚫 Uploaded Files (အများကြီးရှိနိုင်လို့)
+uploads/
+public/uploads/
+storage/
+video_storage/
+temp_uploads/
+
+# 🚫 Logs
+*.log
+error_log
+logs/
+app/logs/
+
+# 🚫 Cache & Session
+tmp/
+cache/
+sessions/
+app/cache/
+*.tmp
+*.cache
+
+# 🚫 Dependencies
+vendor/
+composer.lock
+node_modules/
+
+# 🚫 IDE/Editor Files
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# 🚫 Video Files (အကြီးကြီးဖိုင်တွေ)
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.flv
+*.wmv
+
+# 🚫 Database Backups
+*.sql
+*.dump
+backup/
+database_backups/
+
+# 🚫 System
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# 🚫 Backup Files
+*.bak
+*.backup
+*.old
