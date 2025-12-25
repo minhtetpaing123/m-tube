@@ -1,4 +1,4 @@
-GitHubbe
+m-tubereree
 🎬 M-Tube — မြန်မာဗီဒီယိုမျှဝေခြင်း ပလက်ဖောင်း
 
 M-Tube သည် PHP (MVC) အခြေပြု မြန်မာအသုံးပြုသူများအတွက် ဒီဇိုင်းလုပ်ထားသော JavaScript တွင် project ကို local server သို့မဟုတ် hosting server ပေါ်တွင် run လုပ်နိုင်ရန် လိုအပ်သော source code နှင့် documentation များ ပါဝင်ပါသည်။
@@ -15,7 +15,9 @@ Frontend: HTML, CSS, JavaScript
 
 Version Control: Git & GitHub
 
-📂 Project Structure
+📂 Project Structur
+
+
 m-tube/
 ├── app/            # Application core (controllers, models, views)
 ├── config/         # Configuration files
