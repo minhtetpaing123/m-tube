@@ -1,0 +1,297 @@
+/* YouTube-like Additional Styles */
+
+/* Video Player Page */
+.video-player-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.video-player-main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+}
+
+@media (max-width: 1024px) {
+    .video-player-main {
+        grid-template-columns: 1fr;
+    }
+}
+
+.video-player {
+    background: #000;
+    border-radius: 10px;
+    overflow: hidden;
+    aspect-ratio: 16/9;
+}
+
+.video-player iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.video-info-detailed {
+    margin-top: 20px;
+    padding: 20px;
+    background: var(--gray-dark);
+    border-radius: 10px;
+}
+
+.video-actions {
+    display: flex;
+    gap: 15px;
+    margin: 15px 0;
+    flex-wrap: wrap;
+}
+
+.action-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--gray);
+    border: none;
+    color: var(--text);
+    padding: 8px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.action-btn:hover {
+    background: var(--gray-dark);
+}
+
+.like-btn.active {
+    color: var(--primary);
+}
+
+.subscribe-btn {
+    background: var(--primary);
+    color: white;
+    font-weight: bold;
+}
+
+.subscribe-btn:hover {
+    background: #cc0000;
+}
+
+/* Comments Section */
+.comments-section {
+    margin-top: 30px;
+}
+
+.comment-form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.comment-input {
+    flex: 1;
+    padding: 12px;
+    background: var(--gray-dark);
+    border: 1px solid var(--gray);
+    border-radius: 10px;
+    color: var(--text);
+}
+
+.comment-submit {
+    background: var(--primary);
+    color: white;
+    border: none;
+    padding: 0 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.comment-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.comment-item {
+    display: flex;
+    gap: 15px;
+    padding: 15px;
+    background: var(--gray-dark);
+    border-radius: 10px;
+}
+
+.comment-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+}
+
+.comment-content {
+    flex: 1;
+}
+
+.comment-author {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.comment-text {
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.comment-actions {
+    display: flex;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+/* Channel Page */
+.channel-header {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.channel-avatar-large {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--dark);
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.channel-info h1 {
+    font-size: 2rem;
+    margin-bottom: 5px;
+}
+
+.channel-stats {
+    display: flex;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.channel-tabs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--gray);
+    padding-bottom: 10px;
+}
+
+.channel-tab {
+    background: none;
+    border: none;
+    color: var(--text-secondary);
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    position: relative;
+}
+
+.channel-tab.active {
+    color: var(--primary);
+    font-weight: bold;
+}
+
+.channel-tab.active::after {
+    content: "";
+    position: absolute;
+    bottom: -11px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: var(--primary);
+}
+
+/* Upload Page */
+.upload-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+    background: var(--gray-dark);
+    border-radius: 10px;
+}
+
+.upload-area {
+    border: 2px dashed var(--gray);
+    border-radius: 10px;
+    padding: 40px;
+    text-align: center;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: border 0.3s;
+}
+
+.upload-area:hover {
+    border-color: var(--primary);
+}
+
+.upload-icon {
+    font-size: 3rem;
+    color: var(--primary);
+    margin-bottom: 15px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.form-input {
+    width: 100%;
+    padding: 12px;
+    background: var(--dark);
+    border: 1px solid var(--gray);
+    border-radius: 5px;
+    color: var(--text);
+}
+
+.form-textarea {
+    width: 100%;
+    padding: 12px;
+    background: var(--dark);
+    border: 1px solid var(--gray);
+    border-radius: 5px;
+    color: var(--text);
+    min-height: 100px;
+    resize: vertical;
+}
+
+.submit-btn {
+    background: var(--primary);
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.submit-btn:hover {
+    background: #cc0000;
+}
